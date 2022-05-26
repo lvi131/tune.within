@@ -1,0 +1,137 @@
+.relax{
+    color:#ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85vh;
+    font-family: 'Nunito', sans-serif;
+}
+
+.relax-video{
+    object-fit: cover;
+    height:100vh;
+    width:100vw;
+    top:0;
+    left:0;
+    position: fixed;
+    z-index:-10;
+}
+
+.relax-buttons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    bottom: 3px;
+    position: fixed;
+}
+
+button{
+    margin:0px 10px 0px 10px;
+    width:130px;
+    padding: 5px;
+    background: none;
+    color:#B983FF;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    border: #ffffff solid 0.5px;
+    cursor: pointer;
+    border-radius:10px;
+}
+
+button:focus{
+    background:#ffffff;
+    color:black;
+    opacity: 0.4;
+    font-weight: bold;
+}
+
+.relax-text{
+    font-size: 14px;
+    margin-bottom: 90px;
+}
+
+@media screen and (max-width:550px) {
+    button{
+        font-size: 12px;
+        width: 100px;
+        margin: 0px 5px 5px 5px;
+    }
+}
+
+.relax-circle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+.relax-circle-outline{
+    width: 300px;
+    height:300px;
+    border-radius: 50%;
+    background-color: transparent;
+    border:#B983FF solid 8px;
+    
+}
+
+.relax-circle-progress{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #ffffff;
+    transition: 4s ease all;
+}
+
+@media screen and (max-width:500px){
+    .relax-circle-outline{
+        width:150px;
+        height: 150px;
+        border: #B983FF solid 8px;
+    }
+
+    .relax-circle-progress{
+        width: 25px;
+        height: 25px;
+    }
+
+    .relax-circle{
+        padding-top: 70px;
+    }
+    
+}
+
+.relax-circle-grow{
+    transform: scale(5.3);
+    transition: 4s ease all;
+}
+
+.relax-button{
+    width:150px;
+}
+
+.relax-breathing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.relax-breathing-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.relax-instructions{
+    color:#ffffff;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 10px;
+    font-size: 14px;
+}

@@ -1,0 +1,36 @@
+.songs{
+    display: flex;
+    flex-direction: row;
+    padding-left: 15px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.songs-list{
+    padding: 20px;
+}
+
+.song{
+    width:20%;
+    margin: 30px;
+    height:380;
+}
+
+@media screen and (max-width:1200px) {
+    .song{
+        width: 40%;
+        height:200;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .song{
+        width: 85%;
+        height:100;
+    }
+}
+
+.songs-text{
+    color:#ffffff;
+    font-size: 12px;
+}

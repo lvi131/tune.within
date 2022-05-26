@@ -1,0 +1,167 @@
+.header{
+    color:#ffffff;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:100px 80px 20px 80px;
+    padding-bottom:100px;
+}
+
+.header-heading{
+    margin: 80px 20px 0px 20px;
+    font-size:43px;
+    font-weight:400;
+    color:#ffffff;
+    text-align: center;
+}
+
+.header-heading-part{
+    color:#B983FF;
+}
+
+@media screen and (max-width:700px) {
+    .header-heading{
+        font-size: 24px;
+    }
+}
+
+.header-description{
+    color:#FBCAFF;
+    font-size: 20px;
+    text-align: center;
+    margin:20px 90px 20px 90px;
+    font-weight: normal;
+}
+
+@media screen and (max-width:700px) {
+    .header-description{
+        margin:20px 5px 20px 5px ;
+    }
+}
+
+.header-card{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    /*background-color:#F0D9FF;*/
+    /*background-color: #583D72;*/
+    padding: 100px 30px 30px 30px;
+    font-family: 'Cabin', sans-serif;
+    background-size: cover;
+    
+}
+
+.header-card-listen, .header-card-write {
+    margin:30px 30px 2px 30px;
+    width:50%;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.header-card-write{
+    margin-bottom: 100px;
+}
+
+.header-card-focus {
+    width:50%;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    margin: 100px 20px 80px 30px;
+}
+
+.header-button {
+    padding:10px 5% 10px 5%;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    color:#ffffff;
+    border:#B983FF solid 2px;
+    transition: 1s ease;
+}
+
+.header-button:hover{
+    background-color:#B983FF;
+    color:black;
+}
+
+.header-option-listen, .header-option-write{
+    margin-bottom: 20px;
+    color:#ffffff;
+    font-size:20px;
+    text-align: left;
+}
+
+.header-option-focus{
+    margin-bottom: 20px;
+    color:#ffffff;
+    font-size:20px;
+    text-align: right;
+}
+
+.header-image-listen, .header-image-write{
+    width:180px;
+
+}
+
+.header-image-focus{
+    width:170px;
+    margin-top:20px;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+@media screen and (max-width:700px) {
+    .header-image-listen, .header-image-write{
+        width:100px;
+    }
+    .header-image-focus{
+        width:100px;
+    }
+
+    .header-option-focus{
+        font-size: 16px;
+        text-align: center;
+    }
+    .header-option-listen, .header-option-write{
+        font-size: 16px;
+        text-align: center;
+    }
+    .header{
+        margin: 100px 5px 20px 5px;
+    }
+    .header-button{
+        font-size: 12px;
+    }
+
+    .header-card{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+
+    .header-card-listen, .header-card-write{
+        align-self: center;
+        margin-bottom: 50px;
+        align-items: center;
+        width: 90%;
+    }
+    .header-card-focus{
+        margin-top: 50px;
+        align-self: center;
+        align-items: center;
+        width: 90%;
+    }
+
+    
+}
+

@@ -1,0 +1,119 @@
+.navbar{
+    background-color:#111111;
+    height:80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:20px;
+    top:0;
+    z-index:20;
+    font-family: 'Nunito', sans-serif;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar-container{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width:100%;
+     height:80px;
+     max-width:1500px;
+     
+}
+
+.navbar-logo{
+    align-items: center;
+    margin-left: 20px ;
+    cursor:pointer;
+    text-decoration: none;
+    font-size:48px;
+    font-family: 'Caveat', sans-serif;
+    color:#B983FF;
+}
+
+.navbar-menu{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    margin-right: 32px;
+}
+
+.navbar-link {
+    color:#ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    height: 100%;
+    border-bottom:1px solid transparent;
+}
+
+.navbar-item{
+    line-height:40px;
+    margin-right:16px;
+}
+
+.navbar-item:after{
+    content:"";
+    display: block;
+    height:1px;
+    width:0;
+    background: transparent;
+    transition: width 0.7s ease, background-color 0.5s ease;
+}
+
+.navbar-item:hover:after{
+    width:100%;
+    background:#B983FF;
+} 
+
+
+.navbar-icon{
+    display: none;
+}
+
+@media screen and (max-width:960px){
+
+    .navbar-menu{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        height:250px;
+        position:absolute;
+        top:80px;
+        left:-110%;
+        opacity:1;
+    }
+
+    .navbar-menu.active{
+        background:#111111;
+        left:0px;
+        opacity:1;
+        transition: all 0.5s ease;
+        z-index:1;
+    }
+
+    .navbar-link{
+        padding:16px;
+        width:100%;
+    }
+
+    .navbar-item{
+        margin:16px;
+    }
+
+    .navbar-icon{
+        display: block;
+        cursor: pointer;
+        position:absolute;
+        top:0;
+        right:0;
+        transform: translate(-100%,60%);
+        font-size: 26px;
+        color:#FBCAFF;
+    }
+
+    .navbar-logo{
+        font-size:36px;
+    }
+
+}

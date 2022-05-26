@@ -1,0 +1,14 @@
+.footer{
+    font-family: 'Nunito', sans-serif;
+    color:#ffffff;
+    margin-bottom:30px;
+    margin-left:50px;
+    margin-top: 200px;
+}
+
+.footer-text{
+    text-decoration:underline 0.5px;
+    color:#ffffff;
+    font-weight: normal;
+    font-size: 18px;
+}
