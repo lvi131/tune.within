@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+## tune.[with]in
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created during the Microsoft Engage mentorship program 2022.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Development
 
-### `npm start`
+1. `git clone https://github.com/lvi131/tune.within.git`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. `cd tune.within`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. `npm install --force`
 
-### `npm test`
+4. `npm start`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+App will be visible at [http://localhost:3000/](http://localhost:3000/)
 
-### `npm run build`
+> In the project folder go to src/spotify.js and change the redirectUri to [http://localhost:3000/listen](http://localhost:3000/listen)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+> Please ensure in step 3 to run `npm install --force` and not `npm install`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> If you would like to test the app, please add your spotify linked email-address [here.](https://docs.google.com/spreadsheets/d/1py6JW9Tmtov35yLkqK0p_KZfhdi_0vRVjlzw2W3z6a0/edit?usp=sharing)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Problem Statement
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Demonstrate the application of face recognition technology.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Project
 
-## Learn More
+A browser based web application as a relaxing tool cum productivity hack revolving around music and emotion detection. Try it [here](https://tune-within.web.app/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Brief Overview
 
-### Code Splitting
+- In the listen option, a user logs in with Spotify and clicks a picture. The emotion is detected and songs are recommended based on the emotion and Spotify listening patterns.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- In the focus option, a user has options to choose from nature themed audio-video relaxing effects and also a guided box-breathing feature.
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Technologies Used
 
-### Making a Progressive Web App
+- ReactJS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- [face-api.js](https://justadudewhohacks.github.io/face-api.js/docs/index.html) for facial recognition and emotion detection
 
-### Advanced Configuration
+- [Spotify API](https://developer.spotify.com/documentation/web-api/) for providing personalized song recommendations
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Firebase for hosting
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Future Scope
 
-### `npm run build` fails to minify
+- Improve the UI.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Add a journal writing feature to vent out emotions secured using faceID. 
+
+- Use additional parameters such as heart rate, text analysis, audio analysis, breathing to enhance mood detection.
+
+- Provide options to users to like songs and then factor this into the recommendations.
+
+
